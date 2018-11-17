@@ -1,7 +1,9 @@
-body{
+html{
   font-size: 16px;
   font-family: helvetica;
   width: auto;
+  font-family: "Roboto Slab",serif;
+
 }
 .container{
   max-width: 1600px;
@@ -11,72 +13,154 @@ body{
 /*Header*/
 header{
   display: flex;
-    justify-content: space-between;
-  height: 5rem;
-  background-color: #4F585C;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  height: 5rem;
+  background-color: rgb(56, 72, 87);
   align-items: center;
   padding: 0 1.5rem;
+  position: fixed;
+  width: 99%;
 }
 #logo{
   display: flex;
   align-items: center;
   height: 2rem;
 }
+#logo span{
+  color: white;
+  font-size: 1.5rem;
+}
+#logo .colmar{
+  color: #ffb200;
+  font-weight: bold;
+}
 .navigation ul{
   display: flex;
   flex-direction: row;
 }
 .navigation ul li{
-  margin:0px 1rem;
+  color:white;
+  margin:0px 1.7rem;
+  padding-right: 2rem;
 }
-a {
+.navigation a {
+  color: white;
   text-decoration: none;
+}
+.navigation a:hover{
+  color:#ffb200;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition-property: font-size;
+  transition-duration: 0.5s;
 }
 /* Banner */
 #banner{
   display: flex;
   align-items: center;
-  background-color: #B2B4B5;
+  background-color:;
   width: auto;
 }
-#banner img{
+.leftblock{
   max-width: 60%;
-  margin: 2rem 1.5rem;
+  margin-top: 7rem;
 }
+.leftblock img{
+  width: 100%;
+}
+.rightblock{
+  width: 40%;
+  margin-left: 2rem;
+}
+.rightblock h1{
+  font-size: 4.5rem;
+  color: #393838;
+  line-height: 1;
+  font-weight: bold;
+}
+.rightblock p{
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+.button{
+  display: block;
+  width: 40%;
+  text-align: center;
+  background-color: rgb(56, 72, 87);
+  padding:1rem 2rem;
+  margin: 2rem 0;
+}
+.rightblock a{
+  color:white;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: #ffb200;
+  color:rgb(56, 72, 87);
+  transition-duration: 1s;
+}
+
+
 
 /*Info*/
 #info{
   display: flex;
+  margin-top: 4rem;
 }
 .info-main{
   width: 60%;
-  margin: 2rem 1.5rem;
 }
 .info-main img{
-  max-width: 100%;
+  width: 100%;
+}
+.info-main h2{
+  margin: 2rem 0;
+  font-size:3rem;
+  color:#393838;
+}
+.info-main p{
+  font-style: italic;
+  margin-bottom: 2rem;
 }
 .info-second{
   width: 40%;
-
   display: flex;
   flex-direction: column;
 }
 .orientation{
   display: flex;
   align-items: center;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin:0 2rem 2rem 2rem;
 }
 .orientation img{
   height: auto;
   margin-right: 1rem;
   max-width: 35%;
 }
-.row p{
+.row h3{
+  font-size: 2rem;
+  color:#393838;
+  font-weight: bold;
+}
+.row span{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.row p {
   margin-top:1rem;
+}
+.row p a{
+  color:#393838;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.row p a:hover{
+  color:#ffb200;
+  font-size: 1.6rem;
+  transition: all 1s;
 }
 
 /*Learning*/
@@ -84,6 +168,8 @@ a {
   text-align: center;
   margin: 2rem;
   padding-top: 2rem;
+  font-size: 3rem;
+  color: #393838;
 }
 .courses{
   display: flex;
@@ -91,16 +177,37 @@ a {
   justify-content: center;
   padding: 0 4.5rem;
 }
-.course{
+.course {
   margin:1rem;
   max-width: 30%;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
-.course img{
+.course a span{
+  font-size: 2rem;
+}
+.course h3{
+font-size: 1rem;
+}
+.course a{
+  text-decoration: none;
+  color:#393838;
+  font-weight: 700;
+}
+.course a div{
+  margin: 1rem;
+}
+.course p{
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.course a img{
   height: auto;
   max-width: 100%;
 }
-.course div{
-  margin:1rem;
+.course:hover{
+  background-color:#ffb200;
+  transition: all 1s;
 }
 /*Thesis*/
 #thesis{
@@ -109,10 +216,20 @@ a {
 #thesis h1{
     text-align: center;
     padding: 2rem 0;
+    font-size: 3rem;
+    color: #393838;
 }
 .urban{
   width: 60%;
   margin: 1.5rem;
+}
+.urban h2{
+  padding: 2rem 0;
+  font-size: 3rem;
+  color: #393838;
+}
+.urban p{
+  font-style: italic;
 }
 video{
   width: 100%;
@@ -124,6 +241,16 @@ video{
   display: flex;
   align-items: center;
   margin: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+}
+.fisma h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color:#393838;
+}
+.fisma p{
+  font-size: 1.2
 }
 .fisma img{
   width: 35%;
@@ -133,14 +260,21 @@ video{
 /*Footer*/
 footer{
   display: flex;
+  color:white;
   justify-content: space-between;
   align-items: center;
-  background-color: #4F585C;
+  background-color: rgb(56, 72, 87);
   height: 5rem;
   padding: 0 1.5rem;
 }
 footer div a{
   padding: 0 1rem;
+  color:white;
+  text-decoration: none;
+}
+footer div a:hover{
+  color:#ffb200;
+  transition: all 1s;
 }
 
  /*Mobile changes */
@@ -157,8 +291,10 @@ footer div a{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    height: 4rem;
+    align-content: center;
+    height: 2.5rem;
     background-color: #4F585C;
+
     }
     /*banner*/
   #banner{
