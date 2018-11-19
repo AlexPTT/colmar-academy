@@ -294,21 +294,31 @@ footer div a:hover{
     align-items: center;
     align-content: center;
     height: 2.5rem;
-    background-color: #4F585C;
+    background-color: rgb(56, 72, 87);
 
     }
     /*banner*/
-  #banner{
+    #banner{display: none;}
+    .banner{
       display: block;
-    }
-  #banner img{
-    max-width: 100%;
-    margin: 0;
+      text-align: center;
+
   }
-  #banner div{
-    margin:0.5rem;
-    text-align: center;
+  .banner a{
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
   }
+  .banner h1{
+    font-size: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+  .mobile img{
+    width: 100%;
+  }
+
+
   /*information*/
 #info{
   display:none
@@ -335,6 +345,10 @@ footer div a:hover{
 }
 .mob-orient p{
   margin-top: 1rem;
+}
+.mob-orient p a{
+  text-decoration: none;
+  color: #393838;
 }
 /*4th section*/
 .courses{
