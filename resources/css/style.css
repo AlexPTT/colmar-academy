@@ -31,7 +31,7 @@ header{
   font-size: 1.5rem;
 }
 #logo .colmar{
-  color: #ffb200;
+  color: #802D15;
   font-weight: bold;
 }
 .navigation ul{
@@ -48,7 +48,7 @@ header{
   text-decoration: none;
 }
 .navigation a:hover{
-  color:#ffb200;
+  color:#802D15;
   font-size: 1.1rem;
   font-weight: bold;
   transition-property: font-size;
@@ -58,8 +58,8 @@ header{
 #banner{
   display: flex;
   align-items: center;
-  background-color:;
   width: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 .leftblock{
   max-width: 60%;
@@ -97,7 +97,7 @@ header{
   text-decoration: none;
 }
 .button:hover{
-  background-color: #ffb200;
+  background-color: #802D15;
   color:rgb(56, 72, 87);
   transition-duration: 1s;
 }
@@ -108,6 +108,7 @@ header{
 #info{
   display: flex;
   margin-top: 4rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 .info-main{
   width: 60%;
@@ -158,7 +159,7 @@ header{
   text-decoration: none;
 }
 .row p a:hover{
-  color:#ffb200;
+  color:#802D15;
   font-size: 1.6rem;
   transition: all 1s;
 }
@@ -206,7 +207,7 @@ font-size: 1rem;
   max-width: 100%;
 }
 .course:hover{
-  background-color:#ffb200;
+  background-color:#802D15;
   transition: all 1s;
 }
 /*Thesis*/
@@ -273,7 +274,7 @@ footer div a{
   text-decoration: none;
 }
 footer div a:hover{
-  color:#ffb200;
+  color:#802D15;
   transition: all 1s;
 }
 
